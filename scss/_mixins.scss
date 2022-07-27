@@ -1,0 +1,20 @@
+@mixin display-format($display, $flex-position, $flex-dir: column) {
+  display: $display;
+  @if $display == flex {
+    flex-direction: $flex-dir;
+    @if $flex-position == center {
+      justify-content: center;
+      align-items: center;
+    } @else if $flex-position == sp-bet {
+      justify-content: space-between;
+    } @else if $flex-position == sp-ard {
+      justify-content: space-around;
+    } @else if $flex-position == sp-evl {
+      justify-content: space-evenly;
+    }
+  } @else if $display == grid {
+  }
+}
+
+@mixin answers-format {
+}
