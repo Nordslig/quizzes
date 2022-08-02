@@ -1,10 +1,78 @@
-body {
-  // min-height: 160vh;
+body.mainPage {
+  background-color: #235384;
+  color: #fff;
+  main {
+    .gothic,
+    .skyrim,
+    .minecraft {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 80%;
+      height: 4rem;
+      margin: 0.5em auto 0;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .minecraft {
+      color: #000;
+      margin-bottom: 0.3em;
+    }
+    .flexStyle {
+      @include display-format(flex, center);
+      align-items: flex-end;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    img {
+      filter: blur(3px);
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    span {
+      display: block;
+      margin-right: 10%;
+      font-family: "Ibarra Real Nova", serif;
+      font-weight: 600;
+    }
+  }
+  footer {
+    @include display-format(flex, center, row);
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 0.8rem;
+    background-color: #1a232c;
+    & span {
+      flex-grow: 2;
+      margin-left: 1em;
+    }
+    & * {
+      color: #fff;
+      text-decoration: none;
+    }
+    & a {
+      flex-grow: 1;
+      padding-left: 0.4em;
+      border-left: #fff solid 2px;
+    }
+  }
+}
+
+body.gothicQuiz {
   height: 100vh;
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
   nav {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -12,13 +80,45 @@ body {
     height: 100%;
     background-color: #ca8f34;
     overflow: hidden;
-    span {
-      font-family: "Ibarra Real Nova", serif;
+    font-family: "Ibarra Real Nova", serif;
+    ul {
+      @include display-format(flex, sp-bet);
+      margin-top: 5%;
+      font-size: 1.4rem;
     }
-    li:last-of-type {
+    li {
+      margin: 2%;
+      padding: 0.5em 0.3em;
+      list-style: none;
+      text-align: center;
+      color: black;
+      // background-color: rgb(76, 55, 55);
+      border-bottom: rgb(76, 55, 55) solid 2px;
+    }
+    .footer {
       position: absolute;
       bottom: 0;
       left: 0;
+      width: 100%;
+      max-height: 20%;
+      padding: 0.5em;
+      font-size: 0.8rem;
+      background-color: #1a232c;
+      // background-color: #791ec8;
+      & * {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+      }
+      & span {
+        text-align: center;
+      }
+      & a {
+        margin-top: 0.6em;
+        margin-bottom: 0.25em;
+        padding-left: 0.6em;
+        border-left: #fff solid 2px;
+      }
     }
   }
   header {
