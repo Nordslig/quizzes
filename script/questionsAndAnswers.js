@@ -2,6 +2,7 @@ const gothicTheme = {
   themeName: "Gothic",
   questionsEasy: [
     {
+      id: 1,
       question: "Kto spuszcza łomot Bezimiennemu po zesłaniu do kolonii?",
       answers: [
         { text: "Bullit", correct: true },
@@ -11,6 +12,7 @@ const gothicTheme = {
       ],
     },
     {
+      id: 2,
       question: "Która osoba z podanych NIE jest przyjacielem Bezimiennego?",
       answers: [
         { text: "Cipher", correct: true },
@@ -20,6 +22,7 @@ const gothicTheme = {
       ],
     },
     {
+      id: 3,
       question:
         "Kto jest dowódcą paladynów w Górniczej Dolinie, a kto w Khorinis?",
       answers: [
@@ -30,6 +33,7 @@ const gothicTheme = {
       ],
     },
     {
+      id: 4,
       question:
         "Które z podanych krain możemy odwiedzić podczas gameplayu Gothica 3",
       answers: [
@@ -43,6 +47,7 @@ const gothicTheme = {
       ],
     },
     {
+      id: 5,
       question: "Do oficjalnego kanonu zaliczamy, które części Gothica?",
       answers: [
         {
@@ -64,6 +69,7 @@ const gothicTheme = {
       ],
     },
     {
+      id: 6,
       question: "Kto jest głównym antagonistą w dwóch pierwszych częściach gry",
       answers: [
         { text: "Śniący i Smok Ożywieniec", correct: true },
@@ -73,6 +79,7 @@ const gothicTheme = {
       ],
     },
     {
+      id: 7,
       question: "Kto spuszcza łomot Bezimiennemu po zesłaniu do kolonii?",
       answers: [
         { text: "Bullit", correct: true },
@@ -82,6 +89,7 @@ const gothicTheme = {
       ],
     },
     {
+      id: 8,
       question: "Kto spuszcza łomot Bezimiennemu po zesłaniu do kolonii?",
       answers: [
         { text: "Bullit", correct: true },
@@ -91,6 +99,7 @@ const gothicTheme = {
       ],
     },
     {
+      id: 9,
       question: "Kto spuszcza łomot Bezimiennemu po zesłaniu do kolonii?",
       answers: [
         { text: "Bullit", correct: true },
@@ -100,6 +109,7 @@ const gothicTheme = {
       ],
     },
     {
+      id: 10,
       question: "Kto spuszcza łomot Bezimiennemu po zesłaniu do kolonii?",
       answers: [
         { text: "Bullit", correct: true },
