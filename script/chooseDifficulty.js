@@ -6,20 +6,9 @@ const easy = document.querySelector(".easy").addEventListener("click", () => {
   chooseQuestion();
 });
 
-// difficulties.forEach((e) => {
-//   e.addEventListener("click", () => {
-//     console.log("działa");
-//     document.querySelector("main").classList.toggle("nvisible");
-//     document.querySelector(".qAndA").classList.toggle("nvisible");
-//   });
+// difficulties.forEach((diff) => {
+//   if (diff.classList.contains("easy")) {
+//   } else if (diff.classList.contains("medium")) {
+//   } else if (diff.classList.contains("hard")) {
+//   }
 // });
-
-difficulties.forEach((diff) => {
-  if (diff.classList.contains("easy")) {
-    // console.log("easy");
-  } else if (diff.classList.contains("medium")) {
-    // console.log("medium");
-  } else if (diff.classList.contains("hard")) {
-    // console.log("hard");
-  }
-});

@@ -5,6 +5,8 @@
     @if $flex-position == center {
       justify-content: center;
       align-items: center;
+    } @else if $flex-position == stretch {
+      justify-content: stretch;
     } @else if $flex-position == sp-bet {
       justify-content: space-between;
     } @else if $flex-position == sp-ard {

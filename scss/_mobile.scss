@@ -134,6 +134,9 @@ body.gothicQuiz {
     p {
       color: #fff;
     }
+    &.nvisible {
+      display: none;
+    }
     .choose-difficulty {
       display: grid;
       grid-template-areas:
@@ -141,6 +144,7 @@ body.gothicQuiz {
         "choice1 choice2 choice3";
       justify-items: center;
       align-items: center;
+
       & > div {
         color: #fff;
       }
@@ -159,10 +163,33 @@ body.gothicQuiz {
       }
     }
   }
-  .question-and-answers {
-    @include display-format(flex, $flex-position: center);
+  .qAndA {
+    @include display-format(flex, center);
+    color: rgb(121, 219, 255);
+    align-items: stretch;
+    &.nvisible {
+      display: none;
+    }
     & .question {
-      @include display-format(flex, $flex-position: center);
+      @include display-format(flex, center);
+      margin: 0 10%;
+      text-align: center;
+    }
+    & .answers {
+      @include display-format(flex, center);
+      align-items: center;
+      & * {
+        @include display-format(flex, stretch);
+        align-items: center;
+        width: 70%;
+        height: 5rem;
+        margin: 2% auto;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border: white solid 2px;
+        font-size: 1.4rem;
+        overflow: scroll;
+      }
     }
   }
   footer {
