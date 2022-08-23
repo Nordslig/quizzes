@@ -27,18 +27,16 @@ const chooseQuestion = () => {
     currentQuest.question;
   document.querySelector(".questionNumber").textContent = questNumber;
 
-  document.querySelectorAll(".answer").forEach((e) => {
-    if (e.classList.contains("answer1")) {
-      e.textContent = currentQuest.answers[0].text;
-    } else if (e.classList.contains("answer2")) {
-      e.textContent = currentQuest.answers[1].text;
-    } else if (e.classList.contains("answer3")) {
-      e.textContent = currentQuest.answers[2].text;
-    } else {
-      e.textContent = currentQuest.answers[3].text;
-    }
-  });
   document.querySelectorAll(".answer").forEach((ans) => {
+    if (ans.classList.contains("answer1")) {
+      ans.textContent = currentQuest.answers[0].text;
+    } else if (ans.classList.contains("answer2")) {
+      ans.textContent = currentQuest.answers[1].text;
+    } else if (ans.classList.contains("answer3")) {
+      ans.textContent = currentQuest.answers[2].text;
+    } else {
+      ans.textContent = currentQuest.answers[3].text;
+    }
     if (ans.textContent === correctAnswer) {
       ans.setAttribute("data-correct", 1);
     }
