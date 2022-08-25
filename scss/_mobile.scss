@@ -67,10 +67,13 @@ body.mainPage {
 }
 
 body.gothicQuiz {
-  height: 100vh;
+  min-height: 100vh;
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
+  &.nvisible {
+    display: none;
+  }
   nav {
     display: none;
     position: fixed;
@@ -93,7 +96,7 @@ body.gothicQuiz {
       text-align: center;
       color: black;
       // background-color: rgb(76, 55, 55);
-      border-bottom: rgb(76, 55, 55) solid 2px;
+      border-bottom: #4c3737 solid 2px;
     }
     .footer {
       position: absolute;
@@ -165,7 +168,7 @@ body.gothicQuiz {
   }
   .qAndA {
     @include display-format(flex, center);
-    color: rgb(121, 219, 255);
+    color: #79dbff;
     align-items: stretch;
     &.nvisible {
       display: none;
@@ -190,6 +193,42 @@ body.gothicQuiz {
         font-size: 1.4rem;
         overflow: scroll;
       }
+    }
+  }
+  .endView {
+    &.nvisible {
+      display: none;
+    }
+    color: white;
+    h2,
+    h3 {
+      margin: 0.4rem 0;
+      text-align: center;
+      .guild {
+        color: #ca8f34;
+      }
+    }
+    blockquote {
+      padding-right: 1rem;
+      text-align: right;
+      font-size: 1rem;
+      font-style: italic;
+    }
+    p.aboutGuild {
+      padding: 0.3rem;
+      font-size: 1.2rem;
+    }
+    a {
+      display: block;
+      width: 70%;
+      margin: 0.2rem auto 1rem;
+      padding: 0.4rem;
+      text-decoration: none;
+      font-size: 1.3rem;
+      text-align: center;
+      color: #000;
+      font-weight: 600;
+      background-color: #d8ac69;
     }
   }
   footer {
