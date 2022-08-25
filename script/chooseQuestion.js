@@ -1,5 +1,6 @@
 let questNumber = 1;
-let numberOfCorrectAnswers = 0;
+let points = 0;
+let guildId = 1;
 
 const questionsIDs = gothicTheme.questionsEasy.map((e) => e.id);
 
@@ -11,7 +12,7 @@ const randomAnswers = gothicTheme.questionsEasy.forEach((e) => {
 });
 
 const chooseQuestion = () => {
-  console.log(numberOfCorrectAnswers);
+  console.log(points);
   const currentQuestID = randomQuestionsIDs.find(
     (e) => e === randomQuestionsIDs[0]
   );

@@ -119,4 +119,69 @@ const gothicTheme = {
       ],
     },
   ],
+  guilds: [
+    {
+      easy: [
+        {
+          id: 1,
+          guildName: "Kopacz",
+          quoteText: "Nie ma tu nic ciekawego.",
+          desc: "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus ullam quam neque aliquam quod impedit, eligendi autem velit asperiores?",
+        },
+        {
+          id: 2,
+          guildName: "obywatel",
+          quoteText: "Nie ma tu nic ciekawego.",
+          desc: "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus ullam quam neque aliquam quod impedit, eligendi autem velit asperiores?",
+        },
+        {
+          id: 3,
+          guildName: "strażnik",
+          quote: "Nie ma tu nic ciekawego.",
+          longDesc:
+            "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus ullam quam neque aliquam quod impedit, eligendi autem velit asperiores?",
+        },
+      ],
+      medium: [
+        {
+          guildName: "najemnik",
+          quote: "Nie ma tu nic ciekawego.",
+          longDesc:
+            "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus ullam quam neque aliquam quod impedit, eligendi autem velit asperiores?",
+        },
+        {
+          guildName: "mag",
+          quote: "Nie ma tu nic ciekawego.",
+          longDesc:
+            "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus ullam quam neque aliquam quod impedit, eligendi autem velit asperiores?",
+        },
+        {
+          guildName: "paladyn",
+          quote: "Nie ma tu nic ciekawego.",
+          longDesc:
+            "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus ullam quam neque aliquam quod impedit, eligendi autem velit asperiores?",
+        },
+      ],
+      hard: [
+        {
+          guildName: "magnat",
+          quote: "Nie ma tu nic ciekawego.",
+          longDesc:
+            "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus ullam quam neque aliquam quod impedit, eligendi autem velit asperiores?",
+        },
+        {
+          guildName: "Bezimienny",
+          quote: "Wszystko będzie w porządku.",
+          longDesc:
+            "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus ullam quam neque aliquam quod impedit, eligendi autem velit asperiores?",
+        },
+        {
+          guildName: "Wrzód",
+          quote: "Hej kolego!",
+          longDesc:
+            "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus ullam quam neque aliquam quod impedit, eligendi autem velit asperiores?",
+        },
+      ],
+    },
+  ],
 };

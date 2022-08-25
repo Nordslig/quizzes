@@ -1,8 +1,14 @@
-const difficulties = document.querySelectorAll(".easy, .medium, .hard");
+// const difficulties = document.querySelectorAll(".easy, .medium, .hard");
+
+// difficulty ID [easy = 1, medium = 2, hard = 3]
+let difficultyID = 1;
+let currentDiffGuilds;
 
 const easy = document.querySelector(".easy").addEventListener("click", () => {
   document.querySelector("main").classList.toggle("nvisible");
   document.querySelector(".qAndA").classList.toggle("nvisible");
+  currentDiffGuilds = gothicTheme.guilds[0].easy;
+  console.log(currentDiffGuilds);
   chooseQuestion();
 });
 
