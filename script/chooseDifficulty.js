@@ -16,4 +16,4 @@ const easy = document.querySelector(".easy").addEventListener("click", () => {
 //   } else if (diff.classList.contains("medium")) {
 //   } else if (diff.classList.contains("hard")) {
 //   }
-// });
+// })
