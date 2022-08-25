@@ -12,7 +12,6 @@ const randomAnswers = gothicTheme.questionsEasy.forEach((e) => {
 });
 
 const chooseQuestion = () => {
-  console.log(points);
   const currentQuestID = randomQuestionsIDs.find(
     (e) => e === randomQuestionsIDs[0]
   );

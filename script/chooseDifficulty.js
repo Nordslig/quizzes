@@ -8,7 +8,6 @@ const easy = document.querySelector(".easy").addEventListener("click", () => {
   document.querySelector("main").classList.toggle("nvisible");
   document.querySelector(".qAndA").classList.toggle("nvisible");
   currentDiffGuilds = gothicTheme.guilds[0].easy;
-  console.log(currentDiffGuilds);
   chooseQuestion();
 });
 

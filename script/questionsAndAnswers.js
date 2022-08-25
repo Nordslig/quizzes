@@ -125,7 +125,7 @@ const gothicTheme = {
         {
           id: 1,
           guildName: "Kopacz",
-          quoteText: "Nie ma tu nic ciekawego.",
+          quoteText: "'Nie ma tu nic ciekawego.'",
           desc: "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus ullam quam neque aliquam quod impedit, eligendi autem velit asperiores?",
         },
         {
