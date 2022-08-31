@@ -1,17 +1,19 @@
 let questNumber = 1;
 let points = 0;
 let guildId = 1;
+const randomQAA = () => {
+  const questionsIDs = currentDiff.map((e) => e.id);
 
-const questionsIDs = gothicTheme.questionsEasy.map((e) => e.id);
+  const randomQuestionsIDs = questionsIDs.sort(() => Math.random() - 0.5);
 
-const randomQuestionsIDs = questionsIDs.sort(() => Math.random() - 0.5);
+  const randomAnswers = gothicTheme.questionsEasy.forEach((e) => {
+    const randomOrder = e.answers.sort(() => Math.random() - 0.5);
+    return randomOrder;
+  });
+  return randomQuestionsIDs;
+};
 
-const randomAnswers = gothicTheme.questionsEasy.forEach((e) => {
-  const randomOrder = e.answers.sort(() => Math.random() - 0.5);
-  return randomOrder;
-});
-
-const chooseQuestion = () => {
+const chooseQuestion = (randomQuestionsIDs) => {
   const currentQuestID = randomQuestionsIDs.find(
     (e) => e === randomQuestionsIDs[0]
   );
@@ -38,7 +40,7 @@ const chooseQuestion = () => {
       ans.textContent = currentQuest.answers[3].text;
     }
     if (ans.textContent === correctAnswer) {
-      ans.setAttribute("data-correct", 1);
+      ans.setAttribute("data-correct", 1);+
     }
   });
   questNumber++;

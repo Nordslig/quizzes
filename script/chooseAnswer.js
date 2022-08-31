@@ -25,4 +25,4 @@ const checkIfCorrect = (ans) => {
   }
 };
 
-chooseAnswer(randomQuestionsIDs);
+chooseAnswer();
