@@ -4,12 +4,9 @@ const difficulties = document.querySelectorAll(".easy, .medium, .hard");
 let difficultyID = 1;
 let currentDiffGuilds;
 let currentDiff;
-// const easy = document.querySelector(".easy").addEventListener("click", () => {
-//   document.querySelector("main").classList.toggle("nvisible");
-//   document.querySelector(".qAndA").classList.toggle("nvisible");
-//   currentDiffGuilds = gothicTheme.guilds[0].easy;
-//   chooseQuestion();
-// });
+let questNumber = 1;
+let points = 0;
+let guildId = 1;
 
 difficulties.forEach((diff) => {
   if (diff.classList.contains("easy")) {
@@ -17,22 +14,24 @@ difficulties.forEach((diff) => {
       showQAA();
       currentDiff = gothicTheme.questionsEasy;
       currentDiffGuilds = gothicTheme.guilds[0].easy;
-      const ranQuestIDs = randomQAA();
-      chooseQuestion(ranQuestIDs);
+      const IDsArr = randomQA(currentDiff);
+      chooseQuestion(IDsArr);
     });
   } else if (diff.classList.contains("medium")) {
     diff.addEventListener("click", () => {
       showQAA();
       currentDiff = gothicTheme.questionsMedium;
       currentDiffGuilds = gothicTheme.guilds[0].medium;
-      chooseQuestion();
+      const IDsArr = randomQA(currentDiff);
+      chooseQuestion(IDsArr);
     });
   } else if (diff.classList.contains("hard")) {
     diff.addEventListener("click", () => {
       showQAA();
       currentDiff = gothicTheme.questionsHard;
       currentDiffGuilds = gothicTheme.guilds[0].hard;
-      chooseQuestion();
+      const IDsArr = randomQA(currentDiff);
+      chooseQuestion(IDsArr);
     });
   }
 });
@@ -40,4 +39,17 @@ difficulties.forEach((diff) => {
 const showQAA = () => {
   document.querySelector("main").classList.toggle("nvisible");
   document.querySelector(".qAndA").classList.toggle("nvisible");
+};
+
+const randomQA = (currentDiff) => {
+  const questionsIDs = currentDiff.map((e) => e.id);
+
+  const randomQuestionsIDs = questionsIDs.sort(() => Math.random() - 0.5);
+
+  currentDiff.forEach((e) => {
+    const randomOrder = e.answers.sort(() => Math.random() - 0.5);
+    return randomOrder;
+  });
+
+  return randomQuestionsIDs;
 };
