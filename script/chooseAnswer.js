@@ -16,7 +16,6 @@ const showAnswers = (currentQuest, IDsArr) => {
   });
 
   document.querySelectorAll(".answers *").forEach((ans) => {
-    console.log(currentQuest.answers[i].text);
     ans.textContent = currentQuest.answers[i].text;
     i++;
     if (ans.textContent === correctAnswer) {
