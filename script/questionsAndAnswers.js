@@ -125,7 +125,7 @@ const gothicTheme = {
   questionsMedium: [
     {
       id: 1,
-      question: "Ile było magów według kanonu tworzyło barierę?",
+      question: "Ile magów według kanonu tworzyło barierę?",
       answers: [
         { text: "12", correct: true },
         { text: "13", correct: false },
@@ -246,119 +246,138 @@ const gothicTheme = {
   questionsHard: [
     {
       id: 1,
-      question: "Kto spuszcza łomot Bezimiennemu po zesłaniu do kolonii?",
+      question: "Na której farmie mieszka Randolph i jakie zadanie/a zleca?",
       answers: [
-        { text: "Bullit", correct: true },
-        { text: "Diego", correct: false },
-        { text: "Y'berion", correct: false },
-        { text: "Wrzód", correct: false },
+        { text: "Farma Akila, 'Do dna' i'Brak' ", correct: true },
+        { text: "Farma Akila, 'Do dna'", correct: false },
+        { text: "Farma Onara, 'Brak' i 'Do dna'", correct: false },
+        { text: "Farma Onara, 'Brak'", correct: false },
       ],
     },
     {
       id: 2,
-      question: "Która osoba z podanych NIE jest przyjacielem Bezimiennego?",
+      question: "Ilu jest magnatów?",
       answers: [
-        { text: "Cipher", correct: true },
-        { text: "Lee", correct: false },
-        { text: "Milten", correct: false },
-        { text: "Diego", correct: false },
+        { text: "Pięciu", correct: true },
+        { text: "Siedmiu", correct: false },
+        { text: "Trzech", correct: false },
+        { text: "Dziewięciu", correct: false },
       ],
     },
     {
       id: 3,
-      question:
-        "Kto jest dowódcą paladynów w Górniczej Dolinie, a kto w Khorinis?",
+      question: "W jakich miejscach znajdują się Artefakty Adanosa?",
       answers: [
-        { text: "Khorinis - Lord Hagen, GD - Garond", correct: true },
-        { text: "Khorinis - Lord Garond, GD - Hagen", correct: false },
-        { text: "Khorinis - Lord Rhobar, GD - Orik", correct: false },
-        { text: "Khorinis - Lord Orik, GD - Rhobar", correct: false },
+        {
+          text: "Al Shedim, Mora Sul, Gotha, Grobowiec Akaschy, Trelis",
+          correct: true,
+        },
+        {
+          text: "Grobowiec Bereka, Gotha, Klasztor magów ognia, Geldern, Ishtar",
+          correct: false,
+        },
+        {
+          text: "Grobowiec Angira, Trelis, Gotha, Mora Sul, Al Shedim",
+          correct: false,
+        },
+        {
+          text: "Grobowiec Ejnara, Gotha, Geldern, Klasztor magów ognia, Ishtar",
+          correct: false,
+        },
       ],
     },
     {
       id: 4,
-      question:
-        "Które z podanych krain możemy odwiedzić podczas gameplayu Gothica 3",
+      question: "Czym są chromaniny?",
       answers: [
-        { text: "Myrtana, Nordmar, Varant", correct: true },
-        { text: "Myrtana, Północne Ziemie, Varant", correct: false },
-        { text: "Normard, Varant, Północne Ziemie", correct: false },
         {
-          text: "Wyspy Południowe, Północne Ziemie, Niezbadane Krainy",
+          text: "Księgami o magicznej aurze",
+          correct: true,
+        },
+        { text: "Skrzyniami z artefaktami", correct: false },
+        { text: "Szaty przynależności do kręgu magów onia", correct: false },
+        {
+          text: "Nie są z tej gry",
           correct: false,
         },
       ],
     },
     {
       id: 5,
-      question: "Do oficjalnego kanonu zaliczamy, które części Gothica?",
+      question:
+        "W grobowcu Quarhodrona jakie są odpowiedzi na kolejne pytania?",
       answers: [
         {
-          text: "Gothic, Gothic 2, Gothic 2: Noc Kruka, Gothic 3",
+          text: "Strażnicy umarłych, Kasta Wojowników, 	Kapłani, Kasta Wojowników, Uczeni, 	Uzdrowiciele, 	Skąd mam to wiedzieć?",
           correct: true,
         },
         {
-          text: "Gothic, Gothic 2: Noc Kruka, Gothic 3",
+          text: "Kapłani, Uczeni, Uczeni, Strażnicy umarłych, Kasta Wojowników, Uzdrowiciele, Skąd mam to wiedzieć?",
           correct: false,
         },
         {
-          text: "Gothic, Gothic 2, Gothic 3",
+          text: "Uczeni, Nie wiem, Strażnicy umarłych, Uzdrowiciele, Kapłani, Kasta Wojowników, Uzdrowiciele",
           correct: false,
         },
         {
-          text: "Gothic, Gothic: Mroczne Tajemnice, Gothic 2, Gothic 2: Noc Kruka, Gothic 3, Gothic 3: Zmierzch Bogów",
+          text: "Kapłani, Kasta wojowników, Uczeni, Nie wiem, Kapłani, Uzdrowiciele, Strażnicy umarłych",
           correct: false,
         },
       ],
     },
     {
       id: 6,
-      question: "Kto jest głównym antagonistą w dwóch pierwszych częściach gry",
+      question: "Ile Nordmarczyków jest w Varancie?",
       answers: [
-        { text: "Śniący i Smok Ożywieniec", correct: true },
-        { text: "Śniący i Bestia ", correct: false },
-        { text: "Rhobar", correct: false },
-        { text: "Wrzód", correct: false },
+        { text: "Sven, Orknarok, Oelk", correct: true },
+        { text: "Sven, Kerth, Orknarok", correct: false },
+        { text: "Tizgar, Okar, Marik", correct: false },
+        { text: "Oelk, Kerth, Tizgar", correct: false },
       ],
     },
     {
       id: 7,
-      question: "Kto spuszcza łomot Bezimiennemu po zesłaniu do kolonii?",
+      question:
+        "Najważniejsze pytanie. Czy Gomez wiedział o wybiciu magów ognia?",
       answers: [
-        { text: "Bullit", correct: true },
-        { text: "Diego", correct: false },
-        { text: "Rhobar", correct: false },
-        { text: "Wrzód", correct: false },
+        { text: "Nie", correct: true },
+        { text: "Chyba nie", correct: false },
+        { text: "Nie wiadomo", correct: false },
+        { text: "Nah", correct: false },
       ],
     },
     {
       id: 8,
-      question: "Kto spuszcza łomot Bezimiennemu po zesłaniu do kolonii?",
+      question:
+        "Gdy w Gothic 2 rozmawiamy z ostatnim bossem jako mag ognia, jakie według niego jest nasze przeznaczenie?",
       answers: [
-        { text: "Bullit", correct: true },
-        { text: "Diego", correct: false },
-        { text: "Rhobar", correct: false },
-        { text: "Wrzód", correct: false },
+        { text: "Głosić nauki Innosa", correct: true },
+        { text: "Wypalać ogień Innosa w jego wrogach", correct: false },
+        {
+          text: "Szerzyć ogień Innosa w sercach jego wiernych",
+          correct: false,
+        },
+        { text: "Robić to co głos Innosa przekaże", correct: false },
       ],
     },
     {
       id: 9,
-      question: "Kto spuszcza łomot Bezimiennemu po zesłaniu do kolonii?",
+      question: "Kto dowodził Pradawnymi i czym była jego broń?",
       answers: [
-        { text: "Bullit", correct: true },
-        { text: "Diego", correct: false },
-        { text: "Rhobar", correct: false },
-        { text: "Wrzód", correct: false },
+        { text: "Wieczny Wędrowiec z kosturem", correct: true },
+        { text: "Wiekopomny Wędrowiec z berłem", correct: false },
+        { text: "Wieczny Wędrowiec z berłem", correct: false },
+        { text: "Wiekopomny Wędrowiec z kosturem", correct: false },
       ],
     },
     {
       id: 10,
-      question: "Kto spuszcza łomot Bezimiennemu po zesłaniu do kolonii?",
+      question: "Kto zawalił wieżę w Starym Obozie?",
       answers: [
-        { text: "Bullit", correct: true },
-        { text: "Diego", correct: false },
-        { text: "Rhobar", correct: false },
-        { text: "Wrzód", correct: false },
+        { text: "Drago", correct: true },
+        { text: "Milten", correct: false },
+        { text: "Baraback", correct: false },
+        { text: "Lester", correct: false },
       ],
     },
   ],
@@ -389,27 +408,27 @@ const gothicTheme = {
       ],
       medium: [
         {
-          guildName: "najemnik",
-          quote: "Nie ma tu nic ciekawego.",
+          guildName: "Najemnik",
+          quote: "Hej, ja Cię znam!  Byłaś w Kolonii!",
           longDesc:
-            "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus ullam quam neque aliquam quod impedit, eligendi autem velit asperiores?",
+            "Zawsze to lepiej niż gdybyś zdobył_a tyle punktów na poziomie łatwym. Domyślam się, że znasz podstawy gry, ale polecam Ci ją powtórzyć.",
         },
         {
-          guildName: "mag",
-          quote: "Nie ma tu nic ciekawego.",
+          guildName: "Mag",
+          quote: "",
           longDesc:
-            "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus ullam quam neque aliquam quod impedit, eligendi autem velit asperiores?",
+            "Oh boy, ciekawe, którym magiem jesteś. Bez względu na to. Mag? Z takim wynikiem? Lepiej zagraj jeszcze raz, tak dla przypomnienia.",
         },
         {
-          guildName: "paladyn",
-          quote: "Nie ma tu nic ciekawego.",
+          guildName: "Paladyn",
+          quote: "Będę się musiał rozmówić z tymi obwiesiami!",
           longDesc:
-            "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus ullam quam neque aliquam quod impedit, eligendi autem velit asperiores?",
+            "Brawo, mając taką wiedze mógłbyś już popisywać się przed znajomymi. Został Ci ostani poziom trudności. Tam udowodnisz, czego jesteś wart.",
         },
       ],
       hard: [
         {
-          guildName: "magnat",
+          guildName: "Magnat",
           quote: "Nie ma tu nic ciekawego.",
           longDesc:
             "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus ullam quam neque aliquam quod impedit, eligendi autem velit asperiores?",
