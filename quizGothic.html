@@ -11,51 +11,59 @@
     class="gothicQuiz"
     style="background-color: #2a1702; position: relative"
   >
-    <nav>
-      <ul>
-        <li>Kłizy >></li>
-        <li>Strona główna</li>
-        <li>Wybór trudności</li>
-        <li>O <span class="aboutTheme">Gothic</span></li>
-      </ul>
-      <div class="footer">
-        <span>&#169;By Bartosz Pindel:</span>
-        <a href="">Portfolio</a>
-        <a href="https://github.com/Nordslig" target="_blank">Github</a>
+    <div class="wrap">
+      <nav>
+        <ul>
+          <li>Kłizy >></li>
+          <li>Strona główna</li>
+          <li>Wybór trudności</li>
+          <li>O <span class="aboutTheme">Gothic</span></li>
+        </ul>
+        <div class="footer">
+          <span>&#169;By Bartosz Pindel:</span>
+          <a href="">Portfolio</a>
+          <a href="https://github.com/Nordslig" target="_blank">Github</a>
+        </div>
+      </nav>
+      <header class="">
+        <h1>Quiz</h1>
+        <h1 class="quiz-theme">z serii Gothic</h1>
+      </header>
+      <main class="">
+        <h2>Witamy w quzie z serii o Gothicu!</h2>
+        <p>
+          Na wszystkich poziomach trudności czeka na Ciebie 10 pytań. Na każde z
+          nich będziesz miał_a 20 sekund na wybranie jednej z 4 odpowiedzi. Po
+          skończeniu quizu, bedziesz mógł/mogł_a spróbować go powtórzyć, wybrać
+          inny stopień trudności lub zagrać w quiz o innej tematyce.
+        </p>
+        <div class="choose-difficulty">
+          <span>Wybierz poziom trudności:</span>
+          <div class="easy">Łatwy</div>
+          <div class="medium">Średni</div>
+          <div class="hard">Trudny</div>
+        </div>
+      </main>
+      <div class="qAndA nvisible">
+        <div class="question">
+          <h2>Pytanie <span class="questionNumber"></span>:</h2>
+          <h3 class="questionValue"></h3>
+        </div>
+        <ul class="answers"></ul>
       </div>
-    </nav>
-    <header class="">
-      <h1>Quiz</h1>
-      <h1 class="quiz-theme">z serii Gothic</h1>
-    </header>
-    <main class="">
-      <h2>Witamy w quzie z serii o Gothicu!</h2>
-      <p>
-        Na wszystkich poziomach trudności czeka na Ciebie 10 pytań. Na każde z
-        nich będziesz miał_a 20 sekund na wybranie jednej z 4 odpowiedzi. Po
-        skończeniu quizu, bedziesz mógł/mogł_a spróbować go powtórzyć, wybrać
-        inny stopień trudności lub zagrać w quiz o innej tematyce.
-      </p>
-      <div class="choose-difficulty">
-        <span>Wybierz poziom trudności:</span>
-        <div class="easy">Łatwy</div>
-        <div class="medium">Średni</div>
-        <div class="hard">Trudny</div>
+      <div class="endView nvisible">
+        <h2>Twoja gildia to <span class="guild"></span>!</h2>
+        <blockquote class="quote"></blockquote>
+        <h3>Osiągnąłeś wynik <span class="points"></span>/10</h3>
+        <p class="aboutGuild"></p>
+        <button class="showSaveForm">Zapisz wynik</button>
+        <a href="quizGothic.html">Powrót na główną stronę "Quiz Gothic"</a>
       </div>
-    </main>
-    <div class="qAndA nvisible">
-      <div class="question">
-        <h2>Pytanie <span class="questionNumber"></span>:</h2>
-        <h3 class="questionValue"></h3>
-      </div>
-      <ul class="answers"></ul>
     </div>
-    <div class="endView nvisible">
-      <h2>Twoja gildia to <span class="guild"></span>!</h2>
-      <blockquote class="quote"></blockquote>
-      <h3>Osiągnąłeś wynik <span class="points"></span>/10</h3>
-      <p class="aboutGuild"></p>
-      <a href="quizGothic.html">Powrót na główną stronę "Quiz Gothic".</a>
+    <div class="saveDataForm nvisible">
+      <p>Podaj swój nick</p>
+      <input type="text" name="name" class="iptName" />
+      <button class="saveData">Zapisz i pokaż wyniki</button>
     </div>
     <script src="/script/questionsAndAnswers.js"></script>
     <script src="/script/chooseDifficulty.js"></script>
