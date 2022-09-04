@@ -232,9 +232,9 @@ body.gothicQuiz {
     }
   }
   .saveDataForm {
-    // &.nvisible {
-    //   display: none;
-    // }
+    &.nvisible {
+      display: none;
+    }
     @include display-format(flex, sp-ard);
     position: fixed;
     top: 50%;
@@ -267,5 +267,12 @@ body.gothicQuiz {
       width: 30%;
       margin: 0 auto;
     }
+  }
+  ul.organizer {
+    display: flex;
+    flex-direction: row;
+    // flex-grow: 1;
+    width: 100%;
+    color: #fff;
   }
 }

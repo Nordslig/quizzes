@@ -1,7 +1,7 @@
 const difficulties = document.querySelectorAll(".easy, .medium, .hard");
 
 // difficulty ID [easy = 1, medium = 2, hard = 3]
-let difficultyID = 1;
+let difficultyID;
 let currentDiffGuilds;
 let currentDiff;
 let questNumber = 1;
@@ -11,6 +11,7 @@ let guildId = 1;
 difficulties.forEach((diff) => {
   if (diff.classList.contains("easy")) {
     diff.addEventListener("click", () => {
+      difficultyID = 1;
       showQAA();
       currentDiff = gothicTheme.questionsEasy;
       currentDiffGuilds = gothicTheme.guilds[0].easy;
@@ -19,6 +20,7 @@ difficulties.forEach((diff) => {
     });
   } else if (diff.classList.contains("medium")) {
     diff.addEventListener("click", () => {
+      difficultyID = 2;
       showQAA();
       currentDiff = gothicTheme.questionsMedium;
       currentDiffGuilds = gothicTheme.guilds[0].medium;
@@ -27,6 +29,7 @@ difficulties.forEach((diff) => {
     });
   } else if (diff.classList.contains("hard")) {
     diff.addEventListener("click", () => {
+      difficultyID = 3;
       showQAA();
       currentDiff = gothicTheme.questionsHard;
       currentDiffGuilds = gothicTheme.guilds[0].hard;
