@@ -415,7 +415,7 @@ const gothicTheme = {
         },
         {
           guildName: "Mag",
-          quote: "",
+          quote: "Chwała Innosowi",
           longDesc:
             "Oh boy, ciekawe, którym magiem jesteś. Bez względu na to. Mag? Z takim wynikiem? Lepiej zagraj jeszcze raz, tak dla przypomnienia.",
         },
@@ -429,21 +429,21 @@ const gothicTheme = {
       hard: [
         {
           guildName: "Magnat",
-          quote: "Nie ma tu nic ciekawego.",
+          quote: "A dlaczego myślisz, że potrzebuję twoich usług?",
           longDesc:
-            "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus ullam quam neque aliquam quod impedit, eligendi autem velit asperiores?",
+            "Magnat. Brawo. Daleko zaszedłeś. Choć... serio? Aż tak trudne pytania masz? Weź się postaraj lub zagraj znów w Gothica.",
         },
         {
           guildName: "Bezimienny",
           quote: "Wszystko będzie w porządku.",
           longDesc:
-            "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus ullam quam neque aliquam quod impedit, eligendi autem velit asperiores?",
+            "Bohater Myrtany, Khorinis, Pogromca Śniącego i Smoka Ożywieńca. Czegóż to tyś nie dokonał. Aplauz dla Ciebie *klask klask*. Ciekawe tylko kto jest mistrzem w tą grę...",
         },
         {
           guildName: "Wrzód",
           quote: "Hej kolego!",
           longDesc:
-            "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus ullam quam neque aliquam quod impedit, eligendi autem velit asperiores?",
+            "A więc dotarł_ś tutaj. Nie spodziewałem się tego. Ale gratulacje. Stanąłeś na równi z bogiem tej gry, stworzycielem świata i zabawiaczem owiec. Czapki z głów.",
         },
       ],
     },
