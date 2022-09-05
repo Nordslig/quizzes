@@ -50,24 +50,26 @@ const saveData = () => {
       (document.cookie = `diff${usersNumber}=${difficultyID};max-age=302400`);
     const tempDate =
       (document.cookie = `date${usersNumber}=${recordDate};max-age=302400`);
+    document.querySelector(".wrap").style.filter = "none";
+    document
+      .querySelectorAll(".saveDataForm, .endView, .scoreboard")
+      .forEach((ele) => ele.classList.toggle("nvisible"));
     scoreboard();
   }
 };
 
-const scoreboard = () => {
-  // const a = getCookie(document.cookie);
-  // td.innerHTML = getCookie();
-  // const cookieValue = document.cookie
-  //   .split("; ")
-  //   .find((row) => row.startsWith(`diff${usersNumber}`))
-  //   ?.split("=")[1];
-  // console.log(cookieValue);
-  // document.querySelectorAll(".dataFromCookies *").forEach((td) => {
-  //   if () {
-  //   }
-  //   td.textContent = document.cookie
-  //     .split("; ")
-  //     .find((row) => row.startsWith(`name${usersNumber}`))
-  //     ?.split("=")[1];
-  // });
-};
+// const a = getCookie(document.cookie);
+// td.innerHTML = getCookie();
+// const cookieValue = document.cookie
+//   .split("; ")
+//   .find((row) => row.startsWith(`diff${usersNumber}`))
+//   ?.split("=")[1];
+// console.log(cookieValue);
+// document.querySelectorAll(".dataFromCookies *").forEach((td) => {
+//   if () {
+//   }
+//   td.textContent = document.cookie
+//     .split("; ")
+//     .find((row) => row.startsWith(`name${usersNumber}`))
+//     ?.split("=")[1];
+// });

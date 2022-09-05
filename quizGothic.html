@@ -60,35 +60,28 @@
         <button class="showSaveForm">Zapisz wynik</button>
         <a href="quizGothic.html">Powrót na główną stronę "Quiz Gothic"</a>
       </div>
+      <div class="scoreboard nvisible">
+        <table>
+          <tr>
+            <th>Lp</th>
+            <th>Nazwa</th>
+            <th>Poziom trudności</th>
+            <th>*/10 Pkt</th>
+            <th>Data</th>
+          </tr>
+        </table>
+      </div>
     </div>
     <div class="saveDataForm nvisible">
       <p>Podaj swój nick</p>
       <input type="text" name="name" class="iptName" />
       <button class="saveData">Zapisz i pokaż wyniki</button>
     </div>
-    <div class="scoreboard">
-      <ul class="organizer">
-        <ul class="userNum">
-          Lp
-        </ul>
-        <ul class="nickname">
-          Nazwa
-        </ul>
-        <ul class="whichDiff">
-          Poziom Trudności
-        </ul>
-        <ul class="totalPoints">
-          */10 pkt
-        </ul>
-        <ul class="currentDate">
-          Data
-        </ul>
-      </ul>
-    </div>
     <script src="/script/questionsAndAnswers.js"></script>
     <script src="/script/chooseDifficulty.js"></script>
     <script src="/script/chooseQuestion.js"></script>
     <script src="/script/chooseAnswer.js"></script>
     <script src="/script/endScreeen.js"></script>
+    <script src="/script/scoreboard.js"></script>
   </body>
 </html>

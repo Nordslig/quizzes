@@ -268,11 +268,16 @@ body.gothicQuiz {
       margin: 0 auto;
     }
   }
-  ul.organizer {
-    display: flex;
-    flex-direction: row;
-    // flex-grow: 1;
-    width: 100%;
-    color: #fff;
+  // display: flex;
+  // flex-direction: row;
+  // flex-grow: 1;
+  .scoreboard {
+    &.nvisible {
+      display: none;
+    }
+    table {
+      width: 100%;
+      color: #fff;
+    }
   }
 }
